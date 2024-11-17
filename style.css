@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline :none; özellikle inputlarda tıklanıldığı zaman
+  çıkan sarı çizgileri yok eder */
+  outline: none;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.seperation {
+  border: 3px solid rgb(54, 54, 54);
+}
+.main {
+  background-image: url(./netflix_İmage/banner.jpg);
+  background-position: center center;
+  background-size: max(1200px-100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+.main .box {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 644px;
+  opacity: 0.5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  /* vw Tarayıcının %60 ı demektir */
+  width: 60vw;
+  margin: auto;
+}
+.navbar img {
+  width: 130px;
+  position: relative;
+  z-index: 1;
+}
+.navbar button {
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  padding: 3px 8px;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: red;
+}
+.btn-red {
+  background-color: red;
+}
+.btn-red:hover {
+  background-color: rgba(248, 243, 243, 0.021);
+}
+.hero {
+  color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 30px;
+  height: 100%;
+  /* !! Burda Height: calc(100%-100px) Bende çalışmadı */
+}
+.box-title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bolder;
+}
+.box-desc {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+.box-bottum {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.hero-buttons input {
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 4px;
+}
+.hero-buttons button {
+  padding: 8px 24px;
+  font-size: 14px;
+}
+/* İnfo-Area */
+.info-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 1;
+}
+.secImg video {
+  position: absolute;
+  top: 80px;
+  right: 60px;
+}
+.info-area h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.info-area p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+/* Faq Kısmı */
+.faq {
+  padding: 35px;
+}
+.faq h2 {
+  font-size: 48px;
+  text-align: center;
+}
+.faq-box {
+  background-color: #272727;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 34px auto;
+  cursor: pointer;
+  max-width: 60vw;
+  transition: all 0.4s;
+}
+.faq-box:hover {
+  background-color: rgb(23, 23, 23);
+}
+/* Footer */
+.footer {
+  max-width: 60vw;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.footer .questions {
+  padding: 34px 0;
+  font-size: 25px;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box-item a {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* Responsive */
+@media (max-width: 1000px) {
+  .info-area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .info-area h1 {
+    margin-top: 20px auto;
+  }
+  .info-area p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .info-area h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .info-area p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info-area {
+    text-align: center;
+  }
+  .secImg {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+  }
+  .secImg img {
+    width: 100%;
+    height: auto;
+  }
+  .secImg video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
