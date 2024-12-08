@@ -1,7 +1,29 @@
-# Netflix-Clone
+# 🏠Netflix-Clone-Website
 
-<p>Netflixden esinlenerek tasarımlanmış bir film web sitesi </p>
+In this repo, Netflix's interface is simply designed using Html, Css and JavaScript.
 
-<h3>Ekran Görüntüsü</h3>
+# 🚀Features
+
+-Responsive Design
+
+-User-Friendly Interface
+
+-Dynamic Navbar
+
+-Carousel Structure
+
+# 🛠️Technologies Used
+
+-Html
+
+-Css
+
+-Js
+
+# Screenshot
 
 ![](Netflix.gif)
+
+# 📨Contact
+
+For your questions, comments and suggestions, please contact: fratsbht@icloud.com
